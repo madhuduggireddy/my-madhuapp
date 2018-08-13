@@ -4,8 +4,7 @@ pipeline {
     stage('Madhuserver') {
       agent any
       steps {
-        sh '''echo "My Server"
-mvn -version'''
+        sh 'echo "My Server"'
       }
     }
   }
