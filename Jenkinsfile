@@ -6,7 +6,7 @@ pipeline {
       steps {
         sh 'echo "My Server"'
         git(url: 'https://github.com/madhuduggireddy/my-madhuapp.git', branch: 'master', credentialsId: 'test')
-        sh 'git pull'
+        bat 'git clone'
       }
     }
   }
